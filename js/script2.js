@@ -25,8 +25,10 @@ Ticket.prototype.calculatePrice = function() {
   };
 }
 
-const userInputtedMovie = "Spirited Away"
-const userInputtedMovieTime = "standard"
+
+
+const userInputtedMovie = 1
+const userInputtedMovieTime = 2
 const userInputtedAge = 3
 
 let userTicket = new Ticket(userInputtedMovie, userInputtedMovieTime, userInputtedAge);
