@@ -1,9 +1,15 @@
+//Business Logic for TicketBooth --------
+
+
+// Business Logic for Ticket --------
 function Ticket(movie, time, age) {
   this.movie = movie;
   this.time = time;
   this.age = age;
   this.price = 0;
 }
+
+
 
 Ticket.prototype.calculatePrice = function() {
   if (this.movie === 1) {
