@@ -1,32 +1,17 @@
 //Business Logic for TicketBooth --------
 function TicketBooth() {
   this.tickets = []
-  // this.currentId = 0
   this.checkoutPrice = 0
 }
 
 TicketBooth.prototype.addTicket = function(ticket) {
-  // ticket.id = this.assignId();
   this.tickets.push(ticket);
 }
-
-// TicketBooth.prototype.assignId = function() {
-//   this.currentId += 1;
-//   return this.currentId;
-// }
-
-// TicketBooth.prototype.findTicket = function(id) {
-//   if (this.tickets[id] != undefined) {
-//     return this.tickets[id];
-//   }
-//   return false;
-// }
 
 TicketBooth.prototype.totalPrice = function() {
   this.checkoutPrice = 0
   for (let i = 0; i < this.tickets.length; i++) {
     this.checkoutPrice += this.tickets[i].price
-    console.log(this.checkoutPrice);
   }
 }
 
@@ -84,7 +69,5 @@ $(document).ready(function() {
     ticketBooth.addTicket(userTicket);
     ticketBooth.totalPrice();
     showPrice(ticketBooth.checkoutPrice);
-    // console.table(userTicket);
-    // console.table(ticketBooth);
   });
 });
