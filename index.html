@@ -9,37 +9,45 @@
 </head>
 <body>
   <div class="container">
-    <h1>Movie Tickets</h1>
-    <p>Come and buy your movie tickets here! Black Widow's first release happens at midnight!</p>
-    <form id="tickets">
-      <h2>Select your Movie:</h2>
-      <select class="form-control" id="movie">
-        <option value="1">Black Widow</option>
-        <option value="2">Spirited Away</option>
-        <option value="2">Dark Crystal</option>
-        <option value="2">Never Ending Story</option>
-      </select>
-      <h2>Select time:</h2>
-      <select class="form-control" id="time">
-        <option value="1">12:00am</option>
-        <option value="2">2:00am</option>
-        <option value="1">12:00pm</option>
-        <option value="2">2:00pm</option>
-      </select>
-      <h2>Select Age:</h2>
-      <select class="form-control" id="age">
-        <option value="2">Child</option>
-        <option value="3">Teen</option>
-        <option value="3">Adult</option>
-        <option value="1">Elder</option>
-      </select>
-      <button type="submit" class="btn">Submit</button>
+    <div class="jumbotron">
+      <h1>Movie Tickets</h1>
+      <p>Come and buy your movie tickets here! Black Widow's first release happens at midnight!</p>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <form id="tickets">
+            <h2>Select your Movie:</h2>
+            <select class="form-control" id="movie">
+              <option value="1">Black Widow</option>
+              <option value="2">Spirited Away</option>
+              <option value="2">Dark Crystal</option>
+              <option value="2">Never Ending Story</option>
+            </select>
+            <h2>Select time:</h2>
+            <select class="form-control" id="time">
+              <option value="1">12:00am</option>
+              <option value="2">2:00am</option>
+              <option value="1">12:00pm</option>
+              <option value="2">2:00pm</option>
+            </select>
+            <h2>Select Age:</h2>
+            <select class="form-control" id="age">
+              <option value="2">Child</option>
+              <option value="3">Teen</option>
+              <option value="3">Adult</option>
+              <option value="1">Elder</option>
+            </select>
+            <button type="submit" class="btn">Submit</button>
+          </div>
+        </form>
       </div>
-    </form>
-    <div id="show-price">
-      <h2>Total Price</h2>
-      <div id="total-price">
-
+      <div class="col-6">
+        <div id="show-price">
+          <h2>Total Price</h2>
+          <div id="total-price">
+            
+          </div>
+        </div>
       </div>
   </div>
 </body>
