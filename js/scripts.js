@@ -49,9 +49,8 @@ let ticketBooth = new TicketBooth;
 
 function showPrice(price) {
   $("#show-price").show();
-  $("#total-price").html("$" + price);
+  $("#total-price").html("$" + parseFloat(price).toFixed(2));
 }
-
 
 $(document).ready(function() {
   $("form#tickets").submit(function(event) {
